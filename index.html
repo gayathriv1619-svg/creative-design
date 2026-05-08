@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zocket — Shake Shack Perfect Duo Ad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <!-- Logo -->
+    <div class="sidebar-logo" title="Zocket">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C9 5 7 9 7 13h10c0-4-2-8-5-11z" fill="#2563EB"/>
+        <path d="M9 13v3.5l3 3 3-3V13H9z" fill="#2563EB"/>
+        <path d="M7 13c-2 .8-3 2.5-3 4.5h3" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M17 13c2 .8 3 2.5 3 4.5h-3" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <circle cx="10" cy="9" r="1.2" fill="white"/>
+        <circle cx="14" cy="9" r="1.2" fill="white"/>
+      </svg>
+    </div>
+
+    <!-- Collapse chevron -->
+    <div class="sidebar-collapse" title="Collapse">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Workspace / G avatar -->
+    <div class="sidebar-g-avatar" title="Workspace">G</div>
+
+    <!-- Create new -->
+    <div class="sidebar-create" title="New">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Nav icons -->
+    <div class="nav-group">
+      <div class="nav-icon" title="Home">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M2 6.5L8 2l6 4.5V14H10v-3H6v3H2V6.5z" stroke="currentColor" stroke-width="1.3" fill="none"/>
+        </svg>
+      </div>
+      <div class="nav-icon active" title="Generate">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2l.9 2.7 2.7.9-2.7.9L8 9.2l-.9-2.7L4.4 5.6l2.7-.9L8 2z" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+          <path d="M12.5 9l.4 1.1 1.1.4-1.1.4-.4 1.1-.4-1.1-1.1-.4 1.1-.4.4-1.1z" stroke="currentColor" stroke-width="1" fill="none" stroke-linejoin="round"/>
+          <path d="M3.5 1.5l.3.9.9.3-.9.3-.3.9-.3-.9-.9-.3.9-.3.3-.9z" stroke="currentColor" stroke-width="1" fill="none" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="nav-icon" title="Brand">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2L3 4.5v3.5c0 3 2.2 5.6 5 6.5 2.8-.9 5-3.5 5-6.5V4.5L8 2z" stroke="currentColor" stroke-width="1.3" fill="none"/>
+        </svg>
+      </div>
+      <div class="nav-icon" title="Colors">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2a6 6 0 1 0 0 12 1.5 1.5 0 0 0 0-3H7A1.5 1.5 0 0 1 7 8h.5A6 6 0 0 0 14 8a6 6 0 0 0-6-6z" stroke="currentColor" stroke-width="1.3" fill="none"/>
+          <circle cx="5.5" cy="7" r="1" fill="currentColor"/>
+          <circle cx="7.5" cy="4.5" r="1" fill="currentColor"/>
+          <circle cx="10.5" cy="5.5" r="1" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="nav-icon" title="Edit">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 13l8-8 2 2-8 8H3v-2z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/>
+          <path d="M11 2l1 .5.5 1 .5-1 1-.5-1-.5L12.5 1l-.5 1-1 .5z" stroke="currentColor" stroke-width="1" fill="none" stroke-linejoin="round"/>
+          <path d="M13.5 6.5l.3.8.8.3-.8.3-.3.8-.3-.8-.8-.3.8-.3.3-.8z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="nav-icon" title="Broadcast">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="9" r="1.8" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M4.5 12.5A5 5 0 0 1 8 4.5a5 5 0 0 1 3.5 8" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+          <path d="M6 11A2.8 2.8 0 0 1 8 6a2.8 2.8 0 0 1 2 5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="nav-icon" title="Chat">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M13 3H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h2l2 2 2-2h4a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" stroke="currentColor" stroke-width="1.3" fill="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="user-avatar">G</div>
+    </div>
+  </aside>
+
+  <!-- LEFT PANEL -->
+  <div class="left-panel">
+    <!-- Panel Header -->
+    <div class="panel-header">
+      <div class="panel-header-top">
+        <div class="panel-title-area">
+          <div class="status-dot running" id="status-dot"></div>
+          <span class="panel-title">Shake Shack Perfect Duo Ad</span>
+        </div>
+        <div class="panel-header-actions">
+          <button class="icon-btn" title="Collapse">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+              <path d="M2 4.5l4.5 4.5 4.5-4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+              <circle cx="6.5" cy="6.5" r="1.5" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M6.5 1v1.5M6.5 10v1.5M1 6.5h1.5M10 6.5h1.5M2.64 2.64l1.06 1.06M9.3 9.3l1.06 1.06M9.3 3.7L8.24 4.76M3.7 9.3L2.64 10.36" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feed -->
+    <div class="panel-feed" id="panel-feed">
+
+      <!-- User Message -->
+      <div class="user-message">
+        <div class="user-bubble">
+          create an image ad for
+          <br><span class="url-chip">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1"/><path d="M5 1a6 6 0 0 1 0 8M5 1a6 6 0 0 0 0 8M1 5h8" stroke="currentColor" stroke-width="1"/></svg>
+            www.shakeshack.co.uk
+          </span>
+        </div>
+      </div>
+
+      <!-- Plan Card -->
+      <div class="plan-card" id="plan-card">
+        <div class="plan-header" id="plan-header">
+          <span class="plan-label">Plan</span>
+          <span class="plan-chevron" id="plan-chevron">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+        <div class="plan-body collapsed" id="plan-body">
+          <div class="plan-item done" id="plan-0">
+            <div class="plan-step-icon"><div class="plan-step-done"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.8 1.8 3.2-3.2" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></div></div>
+            <span class="plan-text">Read brand sources</span>
+          </div>
+          <div class="plan-item done" id="plan-1">
+            <div class="plan-step-icon"><div class="plan-step-done"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.8 1.8 3.2-3.2" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></div></div>
+            <span class="plan-text">Analyze visual language</span>
+          </div>
+          <div class="plan-item done" id="plan-2">
+            <div class="plan-step-icon"><div class="plan-step-done"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.8 1.8 3.2-3.2" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></div></div>
+            <span class="plan-text">Generate concepts</span>
+          </div>
+          <div class="plan-item done" id="plan-3">
+            <div class="plan-step-icon"><div class="plan-step-done"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.8 1.8 3.2-3.2" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></div></div>
+            <span class="plan-text">Generate high-res outputs</span>
+          </div>
+          <div class="plan-item done" id="plan-4">
+            <div class="plan-step-icon"><div class="plan-step-done"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.8 1.8 3.2-3.2" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></div></div>
+            <span class="plan-text">Quality judge all images</span>
+          </div>
+          <div class="plan-item done" id="plan-5">
+            <div class="plan-step-icon"><div class="plan-step-done"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.8 1.8 3.2-3.2" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></div></div>
+            <span class="plan-text">Final export</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Workflow Groups (hidden until done) -->
+      <div id="workflow-groups">
+
+        <!-- Processing Steps heading + badge only -->
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0 10px;">
+          <span class="ps-title">Processing steps</span>
+          <span class="ps-badge">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.5l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            8 / 8 steps
+          </span>
+        </div>
+
+        <!-- 1. Thought (expandable) -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="5" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 8.5l1 2 1-2" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg></span>
+          <span class="wf-title">Thought</span>
+          <span class="wf-time">13s <span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner">
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1"/><path d="M3 5.5h5M3 3.5h5M3 7.5h3" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg></span>Read daburshop.com/pages/vatika <span class="wf-sub-label">content</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1"/><path d="M3 5.5h5M3 3.5h5M3 7.5h3" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg></span>Read daburshop.com/pages/vatika <span class="wf-sub-label">branding</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1"/><path d="M3 5.5h5M3 3.5h5M3 7.5h3" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg></span>Read daburshop.com/collections/vatika-shampoo <span class="wf-sub-label">content</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1"/><path d="M3 5.5h5M3 3.5h5M3 7.5h3" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg></span>Read daburshop.com/products/vatika-moisture-boost <span class="wf-sub-label">content</span></div>
+          </div>
+        </div>
+
+        <!-- 2. Read URL -->
+        <div class="wf-row">
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.2"/><path d="M3 5.5h5M3 3.5h5M3 7.5h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+          <span class="wf-title" style="font-size:11px;color:var(--muted)">Read <span style="color:var(--text);font-weight:500">https://www.daburshop.com/pages/vatika</span></span>
+          <span class="wf-time"><span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+
+        <!-- 3. Search web (expandable) -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 8.5L11 11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-title">Search web</span>
+          <span class="wf-time">9s <span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner">
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="4.5" cy="4.5" r="3.5" stroke="currentColor" stroke-width="1.1"/><path d="M7 7L9.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>Searched for "Dabur Vatika shampoo product images" <span class="wf-sub-label">images</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="4.5" cy="4.5" r="3.5" stroke="currentColor" stroke-width="1.1"/><path d="M7 7L9.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>Searched for "Vatika Moisture Boost Spanish Olive Aloe Vera" <span class="wf-sub-label">product</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="4.5" cy="4.5" r="3.5" stroke="currentColor" stroke-width="1.1"/><path d="M7 7L9.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>Searched for "Vatika brand guidelines logo" <span class="wf-sub-label">branding</span></div>
+          </div>
+        </div>
+
+        <!-- 4. Analyse images (expandable) -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="1.5" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="4.5" cy="4.5" r="1" stroke="currentColor" stroke-width="1"/><path d="M1.5 9l3-3 2 2 1.5-1.5 3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+          <span class="wf-title">Analyse images <span style="color:var(--hint);font-size:11px">(5)</span></span>
+          <span class="wf-time">8s <span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner">
+            <div class="wf-sub"><span class="wf-sub-dot"></span>Vatika bottle — emerald green translucent body confirmed</div>
+            <div class="wf-sub"><span class="wf-sub-dot"></span>Spanish Olive variant — olive cluster illustration identified</div>
+            <div class="wf-sub"><span class="wf-sub-dot"></span>Pack details — 2% Plant Hyaluron Complex orange band noted</div>
+            <div class="wf-sub"><span class="wf-sub-dot"></span>Aloe Vera splash — crown-shaped gel splash reference found</div>
+            <div class="wf-sub"><span class="wf-sub-dot"></span>Logo usage — white Vatika logo with green leaf confirmed</div>
+          </div>
+        </div>
+
+        <!-- 5. Verify assets (expandable) -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 2l1.2 3.3H11L8.3 7.4l1 3.3-2.8-2-2.8 2 1-3.3L2 5.3h3.3L6.5 2z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg></span>
+          <span class="wf-title">Verify assets</span>
+          <span class="wf-time"><span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner">
+            <div class="assets-block">
+              <div>
+                <div class="assets-label">Product Images (1)</div>
+                <div class="assets-thumbs">
+                  <div class="asset-thumb" style="background:#1a5c3a;flex-direction:column;gap:2px;">
+                    <div style="font-size:9px;font-weight:700;color:#fff">Vatika</div>
+                    <div style="font-size:7px;color:rgba(255,255,255,0.7)">Moisture Boost</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="assets-label">Logo</div>
+                <div class="assets-thumbs">
+                  <div class="asset-logo">
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M2 5c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3-3-1.3-3-3z" fill="#1a5c3a"/><path d="M9 4h3M9 6h2" stroke="#1a5c3a" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    VATIKA
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Clarifying question (expandable) -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.2"/><path d="M5.2 5c0-1 .6-1.5 1.3-1.5s1.3.5 1.3 1.3c0 .7-.5 1-1 1.3-.3.2-.6.4-.6.9" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><circle cx="6.5" cy="9" r="0.6" fill="currentColor"/></svg></span>
+          <span class="wf-title">Clarifying question</span>
+          <span class="wf-time"><span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner">
+            <div class="clarify-card">
+              <div class="clarify-q">Which locations should this ad target, since the Duo deal timing differs by area?</div>
+              <div class="clarify-hint">This keeps the ad copy accurate and avoids showing an expired offer to the wrong audience.</div>
+              <div class="clarify-chips">
+                <span class="clarify-chip">Out-of-London Shacks only</span>
+                <span class="clarify-chip selected">All UK Shacks</span>
+                <span class="clarify-chip">Custom area</span>
+              </div>
+              <div class="clarify-answer-label">Answer</div>
+              <div class="clarify-answer">All UK Shacks</div>
+            </div>
+            <div class="clarify-card">
+              <div class="clarify-q">What format should I design this ad for?</div>
+              <div class="clarify-hint">I need the right aspect ratio before generating concepts.</div>
+              <div class="clarify-chips">
+                <span class="clarify-chip">4:5 portrait</span>
+                <span class="clarify-chip selected">1:1 square</span>
+                <span class="clarify-chip">16:9 landscape</span>
+                <span class="clarify-chip">Other</span>
+              </div>
+              <div class="clarify-answer-label">Answer</div>
+              <div class="clarify-answer">1:1 square</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inline progress card — between Image Analysis and Generated concepts -->
+        <div class="ip-card" id="ip-progress-card">
+          <div class="ip-title-row">
+            <div class="ip-spinner"></div>
+            <span class="ip-label">Evaluating Image Concepts</span>
+            <span class="ip-eta-badge">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+              ~<span id="ip-eta">1m 20s</span> remaining
+            </span>
+          </div>
+          <div class="ip-pills-row">
+            <div class="ip-pill ip-pill-done">
+              <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Concepts <span class="ip-pill-time">· 30s</span>
+            </div>
+            <span class="ip-pill-arrow">›</span>
+            <div class="ip-pill ip-pill-done">
+              <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 4.5l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Verified <span class="ip-pill-time">· 8s</span>
+            </div>
+            <span class="ip-pill-arrow">›</span>
+            <div class="ip-pill ip-pill-active">
+              <div class="ip-pill-spinner"></div>
+              Previews <span class="ip-pill-time">· <span id="ip-elapsed">0s</span></span>
+            </div>
+            <span class="ip-pill-arrow">›</span>
+            <div class="ip-pill ip-pill-upcoming">Quality</div>
+          </div>
+          <div class="ip-sub" id="ip-sub">Rendering image previews...</div>
+        </div>
+
+        <!-- 7. Generated image concepts (3) — 2-line summaries -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5l1.1 3.4H11l-2.7 2 1 3.3-2.8-2-2.8 2 1-3.3L2 4.9h3.4L6.5 1.5z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg></span>
+          <span class="wf-title">Generated image concepts <span style="color:var(--hint);font-size:11px">(3)</span></span>
+          <span class="wf-time">30s <span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner" style="padding-left:4px">
+            <div style="font-size:9px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--hint);margin-bottom:6px">3 Concepts Generated</div>
+            <div class="concept-row">
+              <div class="concept-row-title">Concept 1 — <strong>Clean Duo Hero</strong></div>
+              <div class="concept-row-summary">Studio shot of ShackBurger and crinkle-cut fries on bright white background, bold black headline with green accent, prominent £11.99 price, logo top right. Clean premium food-first composition.</div>
+              <span class="concept-view-btn">View full prompt</span>
+            </div>
+            <div class="concept-row">
+              <div class="concept-row-title">Concept 2 — <strong>Green Splash Craving</strong></div>
+              <div class="concept-row-summary">High-energy Chicken Shack burger and crinkle fries on soft white surface with dynamic Shake Shack green paint splash, playful headline, big price callout, logo top right.</div>
+              <span class="concept-view-btn">View full prompt</span>
+            </div>
+            <div class="concept-row">
+              <div class="concept-row-title">Concept 3 — <strong>Top Down Duo Flatlay</strong></div>
+              <div class="concept-row-summary">Overhead flatlay of ShackBurger and crinkle fries on a warm off-white surface, minimal typography, strong negative space, premium editorial feel with green logo badge.</div>
+              <span class="concept-view-btn">View full prompt</span>
+            </div>
+            <div class="concept-row" style="border: 1.5px dashed var(--border-hover); background: var(--surface2);">
+              <div class="concept-row-title" style="display:flex;align-items:center;gap:6px;">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l.9 2.8H9L6.7 5.5l.9 2.8-2.1-1.5-2.1 1.5.9-2.8L2 3.8h2.6L5.5 1z" stroke="var(--hint)" stroke-width="1.1" fill="none"/></svg>
+                <span style="color:var(--hint)">Concept 4 — </span><strong id="concept4-name" style="color:var(--text)">From your input</strong>
+              </div>
+              <div class="concept-row-summary" id="concept4-summary" style="color:var(--hint);font-style:italic">Continue with the concept you described in the input box. Type or paste your idea below to use it as Concept 4.</div>
+              <span class="concept-view-btn" id="concept4-use" style="color:var(--green-text);text-decoration:none;font-weight:500;cursor:pointer" onclick="useInputConcept()">Use this concept</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7.5 Verified image concept(s) -->
+        <div class="wf-row">
+          <span class="wf-icon">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+              <path d="M6.5 2.5C5.1 2.5 4 3.6 4 5c0 .9.5 1.8 1.2 2.3V9.5h2.6V7.3C8.5 6.8 9 5.9 9 5c0-1.4-1.1-2.5-2.5-2.5z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              <path d="M5 10h3M5.5 11.3h2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="wf-title">Verified 3 image concept(s)</span>
+          <span class="wf-time"><span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body" style="display:block">
+          <div class="wf-body-inner">
+            <div class="vc-card">
+              <div class="vc-title">Concept 2 — <strong>Liquid Olive Splash</strong></div>
+              <div class="vc-short">Hero product shot of the Dabur Vatika Moisture Boost Shampoo bottle on a glossy reflective wet surface, surrounded by an explosive splash of aloe vera gel and Spanish olives mid-air on an emerald-aqua luxury background. Premium typography, CTA, and brand logo arranged for an editorial beauty ad feel.</div>
+              <div class="vc-long">The Dabur Vatika Bio-Infusions Moisture Boost Shampoo bottle in Spanish Olive and Aloe Vera variant stands tall and centred on a mirror-glossy wet emerald surface that reflects the bottle in a soft watery shimmer, the green translucent body, dark green leaf cap, white Vatika logo with green leaf, Spanish Olive and Aloe Vera side text, olive cluster illustration, Moisture Boost Shampoo wordmark, 2% Plant Hyaluron Complex orange band, pink plus HA droplet, 72 Hours Hydration Boost circle, and No Added Salt text all preserved exactly as on pack. A dramatic crown-shaped splash of crystal clear aloe vera gel rises behind the bottle in slow motion, with whole Spanish green olives, fresh olive branches with silvery leaves and chunks of translucent aloe vera flesh suspended mid-air around the bottle. The background is a luxurious gradient of emerald green flowing into aqua turquoise with soft dimensional light pools and faint caustic water reflections dancing on the backdrop, lit with cinematic high-end beauty lighting that throws glossy highlights along the bottle's curve. A bold premium serif white heading 72 Hours of Deep Hydration is placed at the top centre in clean luxury typography, with a slim italic white subheading Powered by Spanish Olive and Aloe Vera tucked just below it. A sleek white pill CTA button reading Shop Now in deep emerald text sits at the bottom centre, feeling like a high-end commerce element. Brand logo placed at the top right corner. Ultra realistic 8K commercial product photography.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Generated image previews (3) — grouped list -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5l1.1 3.4H11l-2.7 2 1 3.3-2.8-2-2.8 2 1-3.3L2 4.9h3.4L6.5 1.5z" stroke="currentColor" stroke-width="1.1" fill="currentColor" opacity="0.15"/><path d="M6.5 1.5l1.1 3.4H11l-2.7 2 1 3.3-2.8-2-2.8 2 1-3.3L2 4.9h3.4L6.5 1.5z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg></span>
+          <span class="wf-title">Generated image previews <span style="color:var(--hint);font-size:11px">(3)</span></span>
+          <span class="wf-time">2m 14s <span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner">
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l.9 2.8H9L6.7 5.5l.9 2.8-2.1-1.5-2.1 1.5.9-2.8L2 3.8h2.6L5.5 1z" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>Generated image preview — <strong style="color:var(--text)">#1 Clean Duo Hero</strong> <span class="wf-sub-label">1:1</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l.9 2.8H9L6.7 5.5l.9 2.8-2.1-1.5-2.1 1.5.9-2.8L2 3.8h2.6L5.5 1z" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>Generated image preview — <strong style="color:var(--text)">#2 Green Splash Craving</strong> <span class="wf-sub-label">1:1</span></div>
+            <div class="wf-sub"><span class="wf-sub-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l.9 2.8H9L6.7 5.5l.9 2.8-2.1-1.5-2.1 1.5.9-2.8L2 3.8h2.6L5.5 1z" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>Generated image preview — <strong style="color:var(--text)">#3 Top Down Duo Flatlay</strong> <span class="wf-sub-label">1:1</span></div>
+          </div>
+        </div>
+
+        <!-- 9. Judged image quality (3) — grouped with per-image breakdown -->
+        <div class="wf-row clickable" onclick="toggleWf(this)">
+          <span class="wf-chevron"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="wf-icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M11 4.5A4.5 4.5 0 0 1 6.5 9M2 9.5l2-5.5 2.5 3 1.5-2 2 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg></span>
+          <span class="wf-title">Judged image quality <span style="color:var(--hint);font-size:11px">(3)</span></span>
+          <span class="wf-time">45s <span class="check-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span></span>
+        </div>
+        <div class="wf-body">
+          <div class="wf-body-inner" style="padding-left:4px">
+
+            <!-- Image 1 -->
+            <div class="judge-section">
+              <div class="judge-section-header">Judged image quality — <strong>#1 Clean Duo Hero</strong></div>
+              <div class="judge-eval-label">Quality Evaluation</div>
+              <div class="judge-summary">Pillars failed: logo, product. Sonnet recommends: edit.</div>
+              <div class="judge-grid">
+                <div class="judge-cell fail">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#A32D2D" stroke-width="1.2"/><path d="M3.5 3.5l4 4M7.5 3.5l-4 4" stroke="#A32D2D" stroke-width="1.2" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Logo</span></div>
+                  <div class="judge-cell-desc">Font weight significantly bolder than reference; UK lockup not matched.</div>
+                </div>
+                <div class="judge-cell fail">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#A32D2D" stroke-width="1.2"/><path d="M3.5 3.5l4 4M7.5 3.5l-4 4" stroke="#A32D2D" stroke-width="1.2" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Product</span></div>
+                  <div class="judge-cell-desc">Fries boat packaging incorrect; burger icon used instead of fries icon.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Text</span></div>
+                  <div class="judge-cell-desc">All text legible, accurate, reflects brand guidelines.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Visual Integrity</span></div>
+                  <div class="judge-cell-desc">No hallucinations or structural defects detected.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="judge-section">
+              <div class="judge-section-header">Judged image quality — <strong>#2 Green Splash Craving</strong></div>
+              <div class="judge-eval-label">Quality Evaluation</div>
+              <div class="judge-summary">Pillars failed: logo. Sonnet recommends: edit.</div>
+              <div class="judge-grid">
+                <div class="judge-cell fail">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#A32D2D" stroke-width="1.2"/><path d="M3.5 3.5l4 4M7.5 3.5l-4 4" stroke="#A32D2D" stroke-width="1.2" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Logo</span></div>
+                  <div class="judge-cell-desc">Burger icon shows three bars instead of two; wavy line not matched.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Product</span></div>
+                  <div class="judge-cell-desc">Chicken Shack burger and fries accurately represented, high fidelity.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Text</span></div>
+                  <div class="judge-cell-desc">All text elements legible and accurate to brand guidelines.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Visual Integrity</span></div>
+                  <div class="judge-cell-desc">No hallucinations or structural defects detected.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="judge-section">
+              <div class="judge-section-header">Judged image quality — <strong>#3 Top Down Duo Flatlay</strong></div>
+              <div class="judge-eval-label">Quality Evaluation</div>
+              <div class="judge-summary">Pillars failed: logo, visual_integrity. Sonnet recommends: edit.</div>
+              <div class="judge-grid">
+                <div class="judge-cell fail">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#A32D2D" stroke-width="1.2"/><path d="M3.5 3.5l4 4M7.5 3.5l-4 4" stroke="#A32D2D" stroke-width="1.2" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Logo</span></div>
+                  <div class="judge-cell-desc">Bolder font weight than reference; burger icon simplified and distorted.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Product</span></div>
+                  <div class="judge-cell-desc">ShackBurger and fries match reference in ingredients and packaging.</div>
+                </div>
+                <div class="judge-cell pass">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#2D6A4F" stroke-width="1.2"/><path d="M3 5.5l2 2 3-3" stroke="#2D6A4F" stroke-width="1.3" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Text</span></div>
+                  <div class="judge-cell-desc">All text elements rendered correctly, no spelling errors.</div>
+                </div>
+                <div class="judge-cell fail">
+                  <div class="judge-cell-top"><span class="judge-cell-icon"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#A32D2D" stroke-width="1.2"/><path d="M3.5 3.5l4 4M7.5 3.5l-4 4" stroke="#A32D2D" stroke-width="1.2" stroke-linecap="round"/></svg></span><span class="judge-cell-name">Visual Integrity</span></div>
+                  <div class="judge-cell-desc">Unrealistic burger stacking in overhead view; top bun precariously balanced.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /workflow-groups -->
+
+      <!-- AI Response -->
+      <div class="ai-response" id="ai-response">
+        <div class="ai-text">Here are the generated 1:1 ad options and judge results:</div>
+
+        <!-- Quality Table -->
+        <div class="quality-card">
+          <div class="quality-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Image Name</th>
+                  <th class="v2-col">Ratio</th>
+                  <th class="v2-col">Res</th>
+                  <th class="v2-col">Logo</th>
+                  <th class="v2-col">Product</th>
+                  <th class="v2-col">Text</th>
+                  <th class="v2-col">Integrity</th>
+                  <th>Overall</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Clean Duo Hero</td>
+                  <td class="v2-col res-text">1:1</td>
+                  <td class="v2-col res-text">2880×2880</td>
+                  <td class="v2-col"><span class="pill fail">FAIL</span></td>
+                  <td class="v2-col"><span class="pill fail">FAIL</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td><span class="pill warn">REVIEW</span></td>
+                </tr>
+                <tr>
+                  <td>Green Splash Craving</td>
+                  <td class="v2-col res-text">1:1</td>
+                  <td class="v2-col res-text">2880×2880</td>
+                  <td class="v2-col"><span class="pill fail">FAIL</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td><span class="pill pass">PASS</span></td>
+                </tr>
+                <tr>
+                  <td>Top Down Duo Flatlay</td>
+                  <td class="v2-col res-text">1:1</td>
+                  <td class="v2-col res-text">2880×2880</td>
+                  <td class="v2-col"><span class="pill fail">FAIL</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td class="v2-col"><span class="pill pass">PASS</span></td>
+                  <td class="v2-col"><span class="pill fail">FAIL</span></td>
+                  <td><span class="pill warn">REVIEW</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="quality-actions">
+            <button class="qa-btn">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="1" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M3 5h4M5 3v4" stroke="currentColor" stroke-width="1.2"/></svg>
+              Copy
+            </button>
+            <button class="qa-btn">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v6M2 7l3 2 3-2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M1 8.5h8" stroke="currentColor" stroke-width="1.2"/></svg>
+              Download
+            </button>
+            <button class="qa-btn">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1h4v4H1zM5 5h4v4H5z" stroke="currentColor" stroke-width="1.1"/></svg>
+              Expand
+            </button>
+          </div>
+        </div>
+
+        <!-- Issues -->
+        <div class="issues-list">
+          <div class="issues-title">Issues</div>
+          <div class="issue-item"><span class="issue-dot"></span>All 3 need logo correction to match UK reference.</div>
+          <div class="issue-item"><span class="issue-dot"></span>Clean Duo Hero needs fries boat packaging fix.</div>
+          <div class="issue-item"><span class="issue-dot"></span>Top Down Flatlay needs burger stacking correction.</div>
+          <div class="recommendation">
+            <div class="rec-label">Recommendation</div>
+            Fix Green Splash Craving first — it only has a localized logo issue to resolve.
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendations (What Next) -->
+      <div class="what-next" id="what-next">
+        <div>
+          <div class="rec-heading">Recommendations</div>
+          <div class="rec-subheading">Based on your current design, here are the best next steps to improve quality and explore new directions.</div>
+        </div>
+        <div class="rec-grid">
+
+          <!-- Fix -->
+          <div class="rec-card">
+            <span class="rec-badge rec-badge-fix">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 8l1.5-1.5M5 2L3.5 3.5M7 4l-4 4M6.5 1.5l2 2-5 5-2-2 5-5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Fix
+            </span>
+            <div class="rec-card-title">Fix logo on Green Splash</div>
+            <div class="rec-card-desc">1 issue · highest quality</div>
+            <button class="rec-gen-btn">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Generate
+            </button>
+          </div>
+
+          <!-- Variations -->
+          <div class="rec-card">
+            <span class="rec-badge rec-badge-var">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="1" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="5.5" y="1" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="1" y="5.5" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="5.5" y="5.5" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/></svg>
+              Variations
+            </span>
+            <div class="rec-card-title">Regenerate all three</div>
+            <div class="rec-card-desc">Batch fix · all concepts</div>
+            <button class="rec-gen-btn">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Generate
+            </button>
+          </div>
+
+          <!-- Resize -->
+          <div class="rec-card">
+            <span class="rec-badge rec-badge-resize">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="1" width="8" height="8" rx="1.2" stroke="currentColor" stroke-width="1.1"/><path d="M6.5 3.5L3.5 6.5M6.5 6.5H3.5V3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Resize
+            </span>
+            <div class="rec-card-title">Export variants</div>
+            <div class="rec-card-desc">PNG · 2880×2880</div>
+            <button class="rec-gen-btn">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Generate
+            </button>
+          </div>
+
+          <!-- Concept -->
+          <div class="rec-card">
+            <span class="rec-badge rec-badge-concept">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1.5C3.3 1.5 2 2.8 2 4.5c0 1 .5 1.8 1.3 2.3V8.5h3.4V6.8C7.5 6.3 8 5.5 8 4.5 8 2.8 6.7 1.5 5 1.5z" stroke="currentColor" stroke-width="1.1" fill="none"/><path d="M3.5 9.2h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+              Concept
+            </span>
+            <div class="rec-card-title">Create motion version</div>
+            <div class="rec-card-desc">5s animated ad</div>
+            <button class="rec-gen-btn">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Generate
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /panel-feed -->
+
+    <!-- Composer -->
+    <div class="composer-area">
+      <div class="context-strip" id="context-strip">
+        <div class="context-strip-top">
+          <span class="context-editing" id="context-editing">Editing:</span>
+          <div class="context-close" onclick="clearSelection()">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 2l6 6M8 2l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="context-images-row" id="context-images-row">
+          <!-- chips injected by JS -->
+        </div>
+      </div>
+
+      <div class="composer-box">
+        <textarea class="composer-textarea" id="composer" placeholder="What do you want to create?" rows="1"></textarea>
+        <div class="composer-actions">
+          <button class="composer-chip">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Add Context
+          </button>
+          <button class="composer-chip">Auto <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 3l2.5 2.5L7 2" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <button class="composer-chip">High <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 3l2.5 2.5L7 2" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="composer-spacer"></div>
+          <button class="send-btn">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 9V3M3 6l3-3 3 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="composer-footer">Zocket can make mistakes. Check important information.</div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL / CANVAS -->
+  <div class="right-panel" id="right-panel">
+
+    <!-- Top Toolbar -->
+    <div class="cv-tb-top">
+      <button class="cv-tb-btn cv-active" title="Pointer">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M3 2l9 5-4.5 1.4L5.6 13 3 2z" fill="currentColor" stroke="currentColor" stroke-width=".5" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="cv-tb-btn" title="Hand">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M5.5 2v5.5M7.5 3v5M9.5 4v4.5M11.5 6v3.5A4 4 0 0 1 7.5 13.5h-1A4 4 0 0 1 2.5 9.5V7.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </button>
+      <button class="cv-tb-btn" title="Crop">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M3.5 1v9h9M1 3.5h9v9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </button>
+      <div class="cv-tb-sep"></div>
+      <button class="cv-tb-btn" title="Zoom In">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="6.5" cy="6.5" r="4" stroke="currentColor" stroke-width="1.3"/><path d="M9.5 9.5L13 13M6.5 4.5v4M4.5 6.5h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </button>
+      <button class="cv-tb-btn" title="Zoom Out">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="6.5" cy="6.5" r="4" stroke="currentColor" stroke-width="1.3"/><path d="M9.5 9.5L13 13M4.5 6.5h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </button>
+      <button class="cv-tb-btn" title="Fit">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 5.5V2h3.5M9.5 2H13v3.5M13 9.5V13H9.5M5.5 13H2V9.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="cv-tb-sep"></div>
+      <button class="cv-dl-btn" id="cvDlBtn">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5v6M3.5 5.5l3 3 3-3M1.5 10.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="cvDlLabel">Download</span>
+      </button>
+      <button class="cv-tb-btn" title="Add">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 2.5v10M2.5 7.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <!-- Selection hint -->
+    <div class="cv-hint" id="cvHint">Tap images to select</div>
+
+    <!-- 4 Vatika Ad Cards -->
+    <div class="cv-grid">
+
+      <!-- Card 1 — Product Shot -->
+      <div class="cv-card" id="cv0">
+        <div class="cv-rate-badge"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l1.1 2.3 2.5.36-1.8 1.76.43 2.53L5.5 6.7 3.27 7.95l.43-2.53L1.9 3.66l2.5-.36L5.5 1z" stroke="currentColor" stroke-width="1" fill="none"/></svg>Rate</div>
+        <div class="cv-card-meta">1:1 · 2880×2880</div>
+        <div class="cv-frame">
+          <div class="cv-ck" id="cvck0"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cv-ad cv-ad-1">
+            <div class="cv-ad-h"><span class="cv-lg">72 Hours of<br>Deep<br>Hydration</span><span class="cv-sm">Powered by Spanish<br>Olive &amp; Aloe Vera</span></div>
+            <div class="cv-badge"><span class="cv-bv">Vatika</span><span class="cv-bs">Bio<br>Infusions</span></div>
+            <svg style="position:absolute;right:12px;bottom:28px;z-index:3" width="52" height="96" viewBox="0 0 52 96" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="0" width="12" height="4" rx="2" fill="#6fc89a"/><rect x="22" y="4" width="8" height="9" fill="#5ab888"/>
+              <rect x="14" y="13" width="24" height="11" rx="5" fill="#4db07a"/><rect x="16" y="24" width="20" height="6" fill="#7dd4a8"/>
+              <path d="M7 30 Q5 36 5 42 L47 42 Q47 36 45 30 Z" fill="#2d8a5a"/>
+              <rect x="5" y="42" width="42" height="50" rx="7" fill="#2d8a5a"/>
+              <rect x="9" y="46" width="34" height="40" rx="4" fill="white" opacity=".92"/>
+              <text x="26" y="58" text-anchor="middle" font-size="6.5" font-weight="700" fill="#1a5c3a" font-family="Arial,sans-serif">Vatika</text>
+              <text x="26" y="67" text-anchor="middle" font-size="3.8" fill="#2d8a5a" font-family="Arial,sans-serif">MOISTURE BOOST</text>
+              <text x="26" y="73" text-anchor="middle" font-size="3.8" fill="#2d8a5a" font-family="Arial,sans-serif">SHAMPOO</text>
+              <rect x="10" y="79" width="32" height="5.5" rx="2.8" fill="#1a5c3a"/>
+              <text x="26" y="83.5" text-anchor="middle" font-size="3.5" fill="white" font-family="Arial,sans-serif">No Mineral Oil</text>
+            </svg>
+            <svg style="position:absolute;left:4px;bottom:26px;z-index:3" width="78" height="38" viewBox="0 0 78 38" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 35 Q19 26 38 16 Q57 7 74 3" stroke="#3d7030" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="18" cy="27" rx="9" ry="4.5" fill="#4a8c35" transform="rotate(-28 18 27)"/>
+              <ellipse cx="33" cy="19" rx="9" ry="4.5" fill="#5aa040" transform="rotate(-18 33 19)"/>
+              <ellipse cx="50" cy="11" rx="8" ry="4" fill="#4a8c35" transform="rotate(-8 50 11)"/>
+              <circle cx="22" cy="26" r="4.5" fill="#2d6020"/>
+              <circle cx="38" cy="17" r="4" fill="#357025"/>
+              <circle cx="53" cy="9" r="3.8" fill="#2d6020"/>
+            </svg>
+            <div style="position:absolute;bottom:0;left:0;right:0;height:24px;background:linear-gradient(to top,rgba(20,80,50,.5),transparent);z-index:2"></div>
+            <div class="cv-cta cv-banner">SHOP NOW</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Model Full Body -->
+      <div class="cv-card" id="cv1">
+        <div class="cv-rate-badge"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l1.1 2.3 2.5.36-1.8 1.76.43 2.53L5.5 6.7 3.27 7.95l.43-2.53L1.9 3.66l2.5-.36L5.5 1z" stroke="currentColor" stroke-width="1" fill="none"/></svg>Rate</div>
+        <div class="cv-card-meta">1:1 · 2880×2880</div>
+        <div class="cv-frame">
+          <div class="cv-ck" id="cvck1"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cv-ad cv-ad-2">
+            <div style="position:absolute;top:10px;right:52px;z-index:5;color:rgba(255,255,255,.9);font-size:10px;font-weight:700;letter-spacing:.04em">Dabur</div>
+            <div class="cv-ad-h" style="max-width:112px"><span class="cv-lg" style="font-size:16px">72 Hours of<br>Deep<br>Hydration</span><span class="cv-sm">Powered by Spanish Olive &amp; Aloe Vera</span></div>
+            <svg style="position:absolute;right:-5px;bottom:0;height:90%;z-index:3" viewBox="0 0 95 205" xmlns="http://www.w3.org/2000/svg">
+              <path d="M48 28 C20 46 7 88 9 148 C11 175 20 195 30 205 L39 162 C36 123 39 84 46 57 Z" fill="#0e0904"/>
+              <path d="M48 28 C72 44 88 84 86 140 C84 168 76 192 64 205 L58 160 C61 120 57 80 53 57 Z" fill="#130b05"/>
+              <ellipse cx="48" cy="24" rx="18" ry="21" fill="#c8906a"/>
+              <rect x="40" y="43" width="16" height="15" rx="4" fill="#c8906a"/>
+              <path d="M15 60 C26 52 38 50 48 52 C58 50 70 53 81 60 L86 135 C72 144 48 146 22 135 Z" fill="#2a7245"/>
+              <path d="M32 26 C12 46 6 82 10 122" stroke="#1a1008" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M39 23 C20 42 15 76 17 115" stroke="#1a1008" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="42" cy="22" rx="2.5" ry="3" fill="#3a1e10" opacity=".85"/>
+              <ellipse cx="55" cy="22" rx="2.5" ry="3" fill="#3a1e10" opacity=".85"/>
+              <path d="M43 30 C47 34 52 34 55 30" stroke="#c06858" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            </svg>
+            <svg style="position:absolute;left:12px;bottom:28px;z-index:4" width="40" height="72" viewBox="0 0 40 72" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="0" width="10" height="3.5" rx="1.8" fill="#6fc89a"/><rect x="17" y="3.5" width="6" height="7" fill="#5ab888"/>
+              <rect x="11" y="10.5" width="18" height="9" rx="4" fill="#4db07a"/><rect x="13" y="19.5" width="14" height="5" fill="#7dd4a8"/>
+              <path d="M5 24 Q3 29 3 34 L37 34 Q37 29 35 24 Z" fill="#2d8a5a"/>
+              <rect x="3" y="34" width="34" height="36" rx="6" fill="#2d8a5a"/>
+              <rect x="6" y="38" width="28" height="26" rx="3" fill="white" opacity=".92"/>
+              <text x="20" y="50" text-anchor="middle" font-size="5.5" font-weight="700" fill="#1a5c3a" font-family="Arial,sans-serif">Vatika</text>
+              <text x="20" y="58" text-anchor="middle" font-size="3.5" fill="#2d8a5a" font-family="Arial,sans-serif">MOISTURE BOOST</text>
+            </svg>
+            <div class="cv-cta" style="bottom:12px;left:50%;transform:translateX(-50%)">Shop Now</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Close-up Model (Rate always visible) -->
+      <div class="cv-card" id="cv2">
+        <div class="cv-rate-badge cv-always"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l1.1 2.3 2.5.36-1.8 1.76.43 2.53L5.5 6.7 3.27 7.95l.43-2.53L1.9 3.66l2.5-.36L5.5 1z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width=".4"/></svg>Rate</div>
+        <div class="cv-card-meta">1:1 · 2880×2880</div>
+        <div class="cv-frame">
+          <div class="cv-ck" id="cvck2"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cv-ad cv-ad-3">
+            <div class="cv-ad-h" style="max-width:122px"><span class="cv-lg" style="font-size:17px;font-weight:900">72 Hours<br>of Deep<br>Hydration</span><span class="cv-sm" style="font-size:7.5px;margin-top:5px">Powered by<br>Spanish Olive<br>and Aloe Vera</span></div>
+            <div class="cv-badge"><span class="cv-bv">Vatika</span><span class="cv-bs">Bio<br>Infusions</span></div>
+            <svg style="position:absolute;right:-8px;bottom:0;height:94%;z-index:3" viewBox="0 0 108 215" xmlns="http://www.w3.org/2000/svg">
+              <path d="M54 24 C22 44 6 92 8 160 C10 182 20 202 32 215 L42 172 C38 132 40 88 48 60 Z" fill="#0e0904"/>
+              <path d="M54 24 C82 42 98 90 95 155 C93 180 84 205 70 215 L64 168 C67 128 63 86 58 60 Z" fill="#130b05"/>
+              <ellipse cx="54" cy="20" rx="23" ry="26" fill="#c8906a"/>
+              <rect x="45" y="44" width="18" height="18" rx="5" fill="#c8906a"/>
+              <path d="M14 64 C28 55 43 52 54 55 C65 52 80 56 94 64 L100 152 C85 162 54 165 22 152 Z" fill="#256040"/>
+              <path d="M36 22 C14 44 7 84 10 125" stroke="#1a1008" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M44 19 C22 40 16 76 18 118" stroke="#1a1008" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+              <ellipse cx="46" cy="18" rx="3" ry="3.5" fill="#3a1e10" opacity=".85"/>
+              <circle cx="45" cy="17" r="1.2" fill="white" opacity=".55"/>
+              <ellipse cx="62" cy="18" rx="3" ry="3.5" fill="#3a1e10" opacity=".85"/>
+              <circle cx="61" cy="17" r="1.2" fill="white" opacity=".55"/>
+              <path d="M48 28 Q54 32 60 28" stroke="#c06858" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <path d="M78 95 C80 80 77 70 75 64" stroke="#c8906a" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <path d="M84 100 C86 85 83 74 81 68" stroke="#c8906a" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+            </svg>
+            <div class="cv-cta" style="bottom:12px">Shop Now</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Product Variant -->
+      <div class="cv-card" id="cv3">
+        <div class="cv-rate-badge"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1l1.1 2.3 2.5.36-1.8 1.76.43 2.53L5.5 6.7 3.27 7.95l.43-2.53L1.9 3.66l2.5-.36L5.5 1z" stroke="currentColor" stroke-width="1" fill="none"/></svg>Rate</div>
+        <div class="cv-card-meta">1:1 · 2880×2880</div>
+        <div class="cv-frame">
+          <div class="cv-ck" id="cvck3"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cv-ad cv-ad-4">
+            <div class="cv-ad-h"><span class="cv-lg">72 Hours of<br>Deep<br>Hydration</span><span class="cv-sm">Powered by Spanish<br>Olive &amp; Aloe Vera</span></div>
+            <div class="cv-badge"><span class="cv-bv">Vatika</span><span class="cv-bs">Bio<br>Infusions</span></div>
+            <svg style="position:absolute;right:10px;bottom:30px;z-index:3;transform:rotate(6deg)" width="50" height="92" viewBox="0 0 50 92" xmlns="http://www.w3.org/2000/svg">
+              <rect x="19" y="0" width="12" height="4" rx="2" fill="#6fc89a"/><rect x="21" y="4" width="8" height="9" fill="#5ab888"/>
+              <rect x="13" y="13" width="24" height="11" rx="5" fill="#4db07a"/><rect x="15" y="24" width="20" height="6" fill="#7dd4a8"/>
+              <path d="M6 30 Q4 36 4 42 L46 42 Q46 36 44 30 Z" fill="#2d8a5a"/>
+              <rect x="4" y="42" width="42" height="46" rx="7" fill="#2d8a5a"/>
+              <rect x="8" y="46" width="34" height="36" rx="4" fill="white" opacity=".92"/>
+              <text x="25" y="58" text-anchor="middle" font-size="6.5" font-weight="700" fill="#1a5c3a" font-family="Arial,sans-serif">Vatika</text>
+              <text x="25" y="67" text-anchor="middle" font-size="3.8" fill="#2d8a5a" font-family="Arial,sans-serif">MOISTURE BOOST</text>
+              <text x="25" y="73" text-anchor="middle" font-size="3.8" fill="#2d8a5a" font-family="Arial,sans-serif">SHAMPOO</text>
+              <rect x="9" y="78" width="32" height="5.5" rx="2.8" fill="#1a5c3a"/>
+              <text x="25" y="82.5" text-anchor="middle" font-size="3.5" fill="white" font-family="Arial,sans-serif">No Mineral Oil</text>
+            </svg>
+            <svg style="position:absolute;left:5px;bottom:28px;z-index:3" width="84" height="46" viewBox="0 0 84 46" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 42 Q22 30 44 18 Q64 8 80 4" stroke="#3d7030" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <ellipse cx="20" cy="33" rx="10" ry="5" fill="#4a8c35" transform="rotate(-30 20 33)"/>
+              <ellipse cx="37" cy="23" rx="10" ry="5" fill="#5aa040" transform="rotate(-20 37 23)"/>
+              <ellipse cx="53" cy="14" rx="9" ry="4.5" fill="#4a8c35" transform="rotate(-10 53 14)"/>
+              <circle cx="24" cy="30" r="5" fill="#2d6020"/>
+              <circle cx="41" cy="21" r="4.5" fill="#357025"/>
+              <circle cx="57" cy="12" r="4" fill="#2d6020"/>
+              <ellipse cx="10" cy="41" rx="8" ry="3.5" fill="#5ab840" transform="rotate(-15 10 41)" opacity=".8"/>
+            </svg>
+            <div style="position:absolute;bottom:0;left:0;right:0;height:24px;background:linear-gradient(to top,rgba(20,80,50,.5),transparent);z-index:2"></div>
+            <div class="cv-cta cv-banner">SHOP NOW</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /cv-grid -->
+
+    <!-- Toast -->
+    <div class="cv-toast" id="cvToast"></div>
+
+    <!-- Bottom Bar -->
+    <div class="cv-tb-bot">
+      <button class="cv-bb-btn">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 2.5h8v8h-8zM5 6.5h3M6.5 5v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Edit Elements
+      </button>
+      <div class="cv-bb-sep"></div>
+      <button class="cv-bb-btn">Variants <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2.5 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="cv-bb-sep"></div>
+      <button class="cv-bb-btn">Resize <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2.5 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="cv-bb-sep"></div>
+      <button class="cv-bb-btn" style="width:36px;padding:0;justify-content:center">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="4" cy="8" r="1.3" fill="currentColor"/><circle cx="8" cy="8" r="1.3" fill="currentColor"/><circle cx="12" cy="8" r="1.3" fill="currentColor"/></svg>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
