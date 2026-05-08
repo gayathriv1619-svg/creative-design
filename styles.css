@@ -1045,10 +1045,37 @@ tr:hover td { background: var(--surface2); }
   padding: 12px 13px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 8px;
+  cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
+  user-select: none;
 }
 .rec-card:hover { border-color: var(--border-hover); background: var(--surface2); }
+.rec-card.selected { border-color: var(--text); background: var(--surface); }
+.rec-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.rec-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-hover);
+  background: var(--surface);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+.rec-card.selected .rec-radio {
+  background: var(--text);
+  border-color: var(--text);
+}
+.rec-radio-check { opacity: 0; transition: opacity 0.15s; }
+.rec-card.selected .rec-radio-check { opacity: 1; }
 .rec-badge {
   display: inline-flex;
   align-items: center;
@@ -1072,23 +1099,31 @@ tr:hover td { background: var(--surface2); }
 .rec-card-desc {
   font-size: 11px;
   color: var(--muted);
-  line-height: 1.4;
+  line-height: 1.55;
+}
+.rec-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+.rec-bar-count {
+  font-size: 12px;
+  color: var(--muted);
 }
 .rec-gen-btn {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 6px 13px;
+  padding: 7px 14px;
   background: var(--text);
   color: #fff;
   border: none;
   border-radius: 8px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
-  width: fit-content;
-  margin-top: 2px;
   transition: opacity 0.15s;
 }
 .rec-gen-btn:hover { opacity: 0.82; }
@@ -1105,62 +1140,35 @@ tr:hover td { background: var(--surface2); }
 }
 
 /* Selected images strip — one thumb per selected image, horizontal */
-.context-strip {
+/* Inner image chips row — inside composer-box */
+.inner-imgs-row {
   display: none;
-  flex-direction: column;
-  gap: 6px;
-  padding: 8px 10px;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-}
-.context-strip.visible { display: flex; }
-.context-strip-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.context-editing { font-size: 10px; color: var(--hint); }
-.context-close {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--hint);
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.15s;
-}
-.context-close:hover { background: var(--border); color: var(--muted); }
-
-/* Horizontal image chips row */
-.context-images-row {
-  display: flex;
   gap: 6px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding-bottom: 2px;
+  padding: 8px 10px 6px;
+  border-bottom: 1px solid var(--border);
 }
-.context-images-row::-webkit-scrollbar { height: 3px; }
-.context-images-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.inner-imgs-row.has-imgs { display: flex; }
+.inner-imgs-row::-webkit-scrollbar { height: 3px; }
+.inner-imgs-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
 .context-img-chip {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 4px 8px 4px 4px;
+  gap: 5px;
+  padding: 3px 6px 3px 4px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 7px;
   flex-shrink: 0;
   animation: fadeIn 0.2s ease;
   cursor: default;
 }
 .context-img-swatch {
-  width: 28px;
-  height: 28px;
-  border-radius: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
   flex-shrink: 0;
 }
 .context-img-label {
@@ -1168,13 +1176,13 @@ tr:hover td { background: var(--surface2); }
   font-weight: 500;
   color: var(--text);
   white-space: nowrap;
-  max-width: 110px;
+  max-width: 90px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .context-img-remove {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1182,7 +1190,7 @@ tr:hover td { background: var(--surface2); }
   cursor: pointer;
   border-radius: 3px;
   transition: color 0.15s;
-  margin-left: 2px;
+  margin-left: 1px;
   flex-shrink: 0;
 }
 .context-img-remove:hover { color: var(--red-text); }

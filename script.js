@@ -1,3 +1,17 @@
+// ── RECOMMENDATION CARD SELECTION ──
+function toggleRec(card) {
+  card.classList.toggle('selected');
+  const n = document.querySelectorAll('.rec-card.selected').length;
+  const bar = document.getElementById('rec-bar');
+  const count = document.getElementById('rec-bar-count');
+  if (n === 0) {
+    bar.style.display = 'none';
+  } else {
+    bar.style.display = 'flex';
+    count.textContent = n + ' selected';
+  }
+}
+
 // ── PLAN COLLAPSE (still collapsible but stays in DOM) ──
 document.getElementById('plan-header').addEventListener('click', function() {
   const body = document.getElementById('plan-body');
@@ -40,10 +54,8 @@ function updateExecuteButton() {
   const toast   = document.getElementById('cvToast');
   const cards   = [0,1,2,3].map(i => document.getElementById('cv'+i));
 
-  // Context strip elements (composer input box)
-  const strip     = document.getElementById('context-strip');
-  const imgRow    = document.getElementById('context-images-row');
-  const editLabel = document.getElementById('context-editing');
+  // Inner image chips row (inside composer-box)
+  const imgRow = document.getElementById('inner-imgs-row');
 
   // Card metadata for chips
   const cardData = {
@@ -70,22 +82,15 @@ function updateExecuteButton() {
       chip.className = 'context-img-chip';
       chip.dataset.id = id;
       chip.innerHTML =
-        '<div class="context-img-swatch" style="background:' + d.color + ';border-radius:5px"></div>' +
+        '<div class="context-img-swatch" style="background:' + d.color + '"></div>' +
         '<span class="context-img-label">' + d.name + '</span>' +
         '<span class="context-img-remove" data-remove="' + id + '">' +
           '<svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M1.5 1.5l6 6M7.5 1.5l-6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>' +
         '</span>';
       imgRow.appendChild(chip);
     });
-
-    const n = ctxSel.size;
-    if (n === 0) {
-      strip.classList.remove('visible');
-      editLabel.textContent = 'Editing:';
-    } else {
-      strip.classList.add('visible');
-      editLabel.textContent = n === 1 ? 'Editing:' : 'Editing ' + n + ' images:';
-    }
+    if (ctxSel.size === 0) imgRow.classList.remove('has-imgs');
+    else imgRow.classList.add('has-imgs');
   }
 
   // Delegate remove-chip clicks inside the strip

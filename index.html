@@ -594,61 +594,66 @@
         <div class="rec-grid">
 
           <!-- Fix -->
-          <div class="rec-card">
-            <span class="rec-badge rec-badge-fix">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 8l1.5-1.5M5 2L3.5 3.5M7 4l-4 4M6.5 1.5l2 2-5 5-2-2 5-5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-              Fix
-            </span>
+          <div class="rec-card" onclick="toggleRec(this)">
+            <div class="rec-card-top">
+              <span class="rec-badge rec-badge-fix">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 8l1.5-1.5M5 2L3.5 3.5M7 4l-4 4M6.5 1.5l2 2-5 5-2-2 5-5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                Fix
+              </span>
+              <div class="rec-radio"><svg class="rec-radio-check" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.5l2 2 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
             <div class="rec-card-title">Fix logo on Green Splash</div>
-            <div class="rec-card-desc">1 issue · highest quality</div>
-            <button class="rec-gen-btn">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Generate
-            </button>
+            <div class="rec-card-desc">Matches to the exact Green Splash brand mark — correct colour, padding, and clear space before final export.</div>
           </div>
 
           <!-- Variations -->
-          <div class="rec-card">
-            <span class="rec-badge rec-badge-var">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="1" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="5.5" y="1" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="1" y="5.5" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="5.5" y="5.5" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/></svg>
-              Variations
-            </span>
-            <div class="rec-card-title">Regenerate all three</div>
-            <div class="rec-card-desc">Batch fix · all concepts</div>
-            <button class="rec-gen-btn">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Generate
-            </button>
+          <div class="rec-card" onclick="toggleRec(this)">
+            <div class="rec-card-top">
+              <span class="rec-badge rec-badge-var">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="1" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="5.5" y="1" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="1" y="5.5" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/><rect x="5.5" y="5.5" width="3.5" height="3.5" rx="1" stroke="currentColor" stroke-width="1.1"/></svg>
+                Variations
+              </span>
+              <div class="rec-radio"><svg class="rec-radio-check" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.5l2 2 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="rec-card-title">Create 3 different variations</div>
+            <div class="rec-card-desc">Get the best variation for the creative with different styles and angles — same message, three distinct visual directions to choose from.</div>
           </div>
 
-          <!-- Resize -->
-          <div class="rec-card">
-            <span class="rec-badge rec-badge-resize">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="1" width="8" height="8" rx="1.2" stroke="currentColor" stroke-width="1.1"/><path d="M6.5 3.5L3.5 6.5M6.5 6.5H3.5V3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Resize
-            </span>
-            <div class="rec-card-title">Export variants</div>
-            <div class="rec-card-desc">PNG · 2880×2880</div>
-            <button class="rec-gen-btn">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Generate
-            </button>
+          <!-- Concept: Festive sale -->
+          <div class="rec-card" onclick="toggleRec(this)">
+            <div class="rec-card-top">
+              <span class="rec-badge rec-badge-concept">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1.5C3.3 1.5 2 2.8 2 4.5c0 1 .5 1.8 1.3 2.3V8.5h3.4V6.8C7.5 6.3 8 5.5 8 4.5 8 2.8 6.7 1.5 5 1.5z" stroke="currentColor" stroke-width="1.1" fill="none"/><path d="M3.5 9.2h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+                Concept
+              </span>
+              <div class="rec-radio"><svg class="rec-radio-check" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.5l2 2 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="rec-card-title">Festive sale</div>
+            <div class="rec-card-desc">Diwali sale style — warm fairy lights, a family enjoying their morning ritual, naturally reaching for the shampoo as part of the celebration.</div>
           </div>
 
-          <!-- Concept -->
-          <div class="rec-card">
-            <span class="rec-badge rec-badge-concept">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1.5C3.3 1.5 2 2.8 2 4.5c0 1 .5 1.8 1.3 2.3V8.5h3.4V6.8C7.5 6.3 8 5.5 8 4.5 8 2.8 6.7 1.5 5 1.5z" stroke="currentColor" stroke-width="1.1" fill="none"/><path d="M3.5 9.2h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
-              Concept
-            </span>
-            <div class="rec-card-title">Create motion version</div>
-            <div class="rec-card-desc">5s animated ad</div>
-            <button class="rec-gen-btn">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Generate
-            </button>
+          <!-- Concept: Ingredient based -->
+          <div class="rec-card" onclick="toggleRec(this)">
+            <div class="rec-card-top">
+              <span class="rec-badge rec-badge-concept">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1.5C3.3 1.5 2 2.8 2 4.5c0 1 .5 1.8 1.3 2.3V8.5h3.4V6.8C7.5 6.3 8 5.5 8 4.5 8 2.8 6.7 1.5 5 1.5z" stroke="currentColor" stroke-width="1.1" fill="none"/><path d="M3.5 9.2h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+                Concept
+              </span>
+              <div class="rec-radio"><svg class="rec-radio-check" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.5l2 2 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="rec-card-title">Ingredient based</div>
+            <div class="rec-card-desc">Hero ingredient spotlight — amla fruit floating in a clean, lit composition, communicating purity and natural strength of the formula.</div>
           </div>
 
+        </div>
+
+        <!-- Bottom generate bar -->
+        <div class="rec-bar" id="rec-bar" style="display:none">
+          <span class="rec-bar-count" id="rec-bar-count">1 selected</span>
+          <button class="rec-gen-btn">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9l2-2m3-5l2 2-5 5-2-2 3-3zM7 1l1.5 1.5L7 4 5.5 2.5 7 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Generate
+          </button>
         </div>
       </div>
 
@@ -656,19 +661,10 @@
 
     <!-- Composer -->
     <div class="composer-area">
-      <div class="context-strip" id="context-strip">
-        <div class="context-strip-top">
-          <span class="context-editing" id="context-editing">Editing:</span>
-          <div class="context-close" onclick="clearSelection()">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 2l6 6M8 2l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-        </div>
-        <div class="context-images-row" id="context-images-row">
-          <!-- chips injected by JS -->
-        </div>
-      </div>
-
       <div class="composer-box">
+        <div class="inner-imgs-row" id="inner-imgs-row">
+          <!-- image chips injected by JS -->
+        </div>
         <textarea class="composer-textarea" id="composer" placeholder="What do you want to create?" rows="1"></textarea>
         <div class="composer-actions">
           <button class="composer-chip">
