@@ -13,6 +13,101 @@
 
 <div class="app">
 
+  <!-- NAV DRAWER (expanded sidebar) -->
+  <div id="nav-backdrop" class="nav-backdrop" onclick="closeNavDrawer()"></div>
+  <div id="nav-drawer" class="nav-drawer">
+    <!-- Header -->
+    <div class="nd-header">
+      <div class="nd-logo">
+        <div class="nd-logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C9 5 7 9 7 13h10c0-4-2-8-5-11z" fill="#fff"/><path d="M9 13v3.5l3 3 3-3V13H9z" fill="#fff"/></svg>
+        </div>
+        <span class="nd-logo-text">Zocket</span>
+      </div>
+      <button class="nd-collapse-btn" onclick="closeNavDrawer()">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <!-- Org row -->
+    <div class="nd-org">
+      <div class="nd-org-avatar">G</div>
+      <span class="nd-org-name">gayathri's Organization</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3.5 5.5l3.5 3.5 3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </div>
+
+    <!-- Create button -->
+    <button class="nd-create-btn">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1v11M1 6.5h11" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Create
+    </button>
+
+    <!-- Nav items -->
+    <nav class="nd-nav">
+      <div class="nd-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 6.5L8 2l6 4.5V14H10v-3H6v3H2V6.5z" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+        <span>Home</span>
+      </div>
+      <div class="nd-item nd-has-arrow">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2l.9 2.7 2.7.9-2.7.9L8 9.2l-.9-2.7L4.4 5.6l2.7-.9L8 2z" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linejoin="round"/><path d="M12.5 9l.4 1.1 1.1.4-1.1.4-.4 1.1-.4-1.1-1.1-.4 1.1-.4.4-1.1z" stroke="currentColor" stroke-width="1" fill="none" stroke-linejoin="round"/></svg>
+        <span>Brand Intelligence</span>
+        <svg class="nd-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <div class="nd-item nd-has-arrow">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L3 4.5v3.5c0 3 2.2 5.6 5 6.5 2.8-.9 5-3.5 5-6.5V4.5L8 2z" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+        <span>Brand Governance</span>
+        <svg class="nd-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+
+      <!-- AI Designer (expanded) -->
+      <div class="nd-item nd-expanded" id="nd-designer-item" onclick="toggleNdDesigner()">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2a6 6 0 1 0 0 12 1.5 1.5 0 0 0 0-3H7A1.5 1.5 0 0 1 7 8h.5A6 6 0 0 0 14 8a6 6 0 0 0-6-6z" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="5.5" cy="7" r="1" fill="currentColor"/><circle cx="7.5" cy="4.5" r="1" fill="currentColor"/><circle cx="10.5" cy="5.5" r="1" fill="currentColor"/></svg>
+        <span>AI Designer</span>
+        <svg class="nd-arrow nd-designer-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <div class="nd-sub-group" id="nd-designer-sub">
+        <div class="nd-sub nd-sub-active">Create</div>
+        <div class="nd-sub nd-sub-muted">Apps</div>
+        <div class="nd-sub nd-sub-muted">Library</div>
+        <div class="nd-sub nd-sub-muted" onclick="openLibrary();closeNavDrawer()">Folder</div>
+      </div>
+
+      <div class="nd-item nd-has-arrow">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13l8-8 2 2-8 8H3v-2z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/><path d="M11 2l1 .5.5 1 .5-1 1-.5-1-.5L12.5 1l-.5 1-1 .5z" stroke="currentColor" stroke-width="1" fill="none" stroke-linejoin="round"/></svg>
+        <span>AI Consumer Research</span>
+        <svg class="nd-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <div class="nd-item nd-has-arrow">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="9" r="1.8" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 12.5A5 5 0 0 1 8 4.5a5 5 0 0 1 3.5 8" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/><path d="M6 11A2.8 2.8 0 0 1 8 6a2.8 2.8 0 0 1 2 5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>
+        <span>AI Paid Media</span>
+        <svg class="nd-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+    </nav>
+
+    <!-- Recent Chats -->
+    <div class="nd-section-row">
+      <span class="nd-section-label">Recent Chats</span>
+      <span class="nd-see-all">See All</span>
+    </div>
+    <div class="nd-chats">
+      <div class="nd-chat-item">Dabur Vatika Moisture Bomb …</div>
+      <div class="nd-chat-item">Mee Mee Swing Cradle Ad</div>
+      <div class="nd-chat-item">Matters.ai Product Creatives</div>
+      <div class="nd-chat-item">Caicedo Chelsea Cinematic Ad</div>
+      <div class="nd-chat-item">Caicedo Chelsea Cinematic Ad</div>
+    </div>
+
+    <!-- User footer -->
+    <div class="nd-user">
+      <div class="nd-user-avatar">G</div>
+      <div class="nd-user-info">
+        <div class="nd-user-name">gayathri</div>
+        <div class="nd-user-email">gayathri@zocket.com</div>
+      </div>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5 6l3-3 3 3M5 10l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <!-- Logo -->
@@ -46,7 +141,7 @@
 
     <!-- Nav icons -->
     <div class="nav-group">
-      <div class="nav-icon" title="Home">
+      <div class="nav-icon" title="Home" onclick="openNavDrawer()">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M2 6.5L8 2l6 4.5V14H10v-3H6v3H2V6.5z" stroke="currentColor" stroke-width="1.3" fill="none"/>
         </svg>
@@ -683,6 +778,9 @@
     </div>
   </div>
 
+  <!-- DRAG RESIZE HANDLE -->
+  <div class="panel-resizer" id="panel-resizer"></div>
+
   <!-- RIGHT PANEL / CANVAS -->
   <div class="right-panel" id="right-panel">
 
@@ -712,10 +810,18 @@
         <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5v6M3.5 5.5l3 3 3-3M1.5 10.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span id="cvDlLabel">Download</span>
       </button>
+      <div class="cv-tb-sep"></div>
+      <button class="cv-move-btn" id="cvMoveBtn" onclick="openFolderPicker()">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 3.5h4l1.5 1.5H11a1 1 0 0 1 1 1V10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        <span>Move to Folder</span>
+      </button>
       <button class="cv-tb-btn" title="Add">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 2.5v10M2.5 7.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
     </div>
+
+    <!-- Scrollable canvas body -->
+    <div class="cv-canvas-body">
 
     <!-- Selection hint -->
     <div class="cv-hint" id="cvHint">Tap images to select</div>
@@ -730,6 +836,7 @@
         <div class="cv-frame">
           <div class="cv-ck" id="cvck0"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="cv-ad cv-ad-1">
+            <img src="images/vatika-1.jpg" class="cv-img" alt="Vatika Ad 1">
             <div class="cv-ad-h"><span class="cv-lg">72 Hours of<br>Deep<br>Hydration</span><span class="cv-sm">Powered by Spanish<br>Olive &amp; Aloe Vera</span></div>
             <div class="cv-badge"><span class="cv-bv">Vatika</span><span class="cv-bs">Bio<br>Infusions</span></div>
             <svg style="position:absolute;right:12px;bottom:28px;z-index:3" width="52" height="96" viewBox="0 0 52 96" xmlns="http://www.w3.org/2000/svg">
@@ -766,6 +873,7 @@
         <div class="cv-frame">
           <div class="cv-ck" id="cvck1"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="cv-ad cv-ad-2">
+            <img src="images/vatika-2.jpg" class="cv-img" alt="Vatika Ad 2">
             <div style="position:absolute;top:10px;right:52px;z-index:5;color:rgba(255,255,255,.9);font-size:10px;font-weight:700;letter-spacing:.04em">Dabur</div>
             <div class="cv-ad-h" style="max-width:112px"><span class="cv-lg" style="font-size:16px">72 Hours of<br>Deep<br>Hydration</span><span class="cv-sm">Powered by Spanish Olive &amp; Aloe Vera</span></div>
             <svg style="position:absolute;right:-5px;bottom:0;height:90%;z-index:3" viewBox="0 0 95 205" xmlns="http://www.w3.org/2000/svg">
@@ -801,6 +909,7 @@
         <div class="cv-frame">
           <div class="cv-ck" id="cvck2"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="cv-ad cv-ad-3">
+            <img src="images/vatika-3.jpg" class="cv-img" alt="Vatika Ad 3">
             <div class="cv-ad-h" style="max-width:122px"><span class="cv-lg" style="font-size:17px;font-weight:900">72 Hours<br>of Deep<br>Hydration</span><span class="cv-sm" style="font-size:7.5px;margin-top:5px">Powered by<br>Spanish Olive<br>and Aloe Vera</span></div>
             <div class="cv-badge"><span class="cv-bv">Vatika</span><span class="cv-bs">Bio<br>Infusions</span></div>
             <svg style="position:absolute;right:-8px;bottom:0;height:94%;z-index:3" viewBox="0 0 108 215" xmlns="http://www.w3.org/2000/svg">
@@ -831,6 +940,7 @@
         <div class="cv-frame">
           <div class="cv-ck" id="cvck3"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="cv-ad cv-ad-4">
+            <img src="images/vatika-4.jpg" class="cv-img" alt="Vatika Ad 4">
             <div class="cv-ad-h"><span class="cv-lg">72 Hours of<br>Deep<br>Hydration</span><span class="cv-sm">Powered by Spanish<br>Olive &amp; Aloe Vera</span></div>
             <div class="cv-badge"><span class="cv-bv">Vatika</span><span class="cv-bs">Bio<br>Infusions</span></div>
             <svg style="position:absolute;right:10px;bottom:30px;z-index:3;transform:rotate(6deg)" width="50" height="92" viewBox="0 0 50 92" xmlns="http://www.w3.org/2000/svg">
@@ -863,6 +973,8 @@
 
     </div><!-- /cv-grid -->
 
+    </div><!-- /cv-canvas-body -->
+
     <!-- Toast -->
     <div class="cv-toast" id="cvToast"></div>
 
@@ -883,6 +995,316 @@
     </div>
 
   </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     LIBRARY VIEW (fullscreen overlay)
+════════════════════════════════════════════ -->
+<div id="lib-view" class="lib-view" style="display:none">
+
+  <!-- Sidebar -->
+  <aside class="lib-sidebar">
+    <div class="lib-sidebar-header">
+      <button class="lib-back-btn" onclick="closeLibrary()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back
+      </button>
+    </div>
+    <div class="lib-sidebar-section">
+      <div class="lib-sb-item lib-sb-active" data-section="all" onclick="libSetSection('all')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="1.5" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1.5" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1.5" y="8" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
+        All Folders
+      </div>
+      <div class="lib-sb-item" data-section="unsorted" onclick="libSetSection('unsorted')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4h10M4 7h6M6 10h2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Unsorted
+      </div>
+    </div>
+    <div class="lib-sidebar-label">Folders</div>
+    <div class="lib-sidebar-section" id="lib-sb-folders"><!-- injected --></div>
+    <button class="lib-new-folder-inline" onclick="openCreateFolder()">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      New Folder
+    </button>
+  </aside>
+
+  <!-- Main content -->
+  <div class="lib-main">
+    <!-- Top bar -->
+    <div class="lib-topbar">
+      <div class="lib-topbar-left">
+        <div class="lib-breadcrumb">gayathri's Organization</div>
+        <div class="lib-page-title-row">
+          <span class="lib-page-title" id="lib-page-title">Folder</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="opacity:.5;margin-left:4px"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="lib-topbar-right">
+        <div class="lib-search-wrap">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.3"/><path d="M9 9l2.5 2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          <input type="text" class="lib-search-input" placeholder="Search folders..." />
+        </div>
+        <button class="lib-create-simple-btn" onclick="openCreateFolder()">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1v9M1 5.5h9" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Create
+        </button>
+        <button class="lib-share-topbar-btn" onclick="openShareModal()">
+          Share
+        </button>
+        <button class="lib-icon-btn" title="Filter">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 4h11M4 7.5h7M6 11h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+        <input type="file" id="lib-file-input" accept="image/*" multiple style="display:none" onchange="handleFileUpload(this)"/>
+        <div class="lib-view-toggle">
+          <button class="lib-vt-btn lib-vt-active" id="lib-vt-grid" onclick="libSetView('grid')" title="Grid">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+          <button class="lib-vt-btn" id="lib-vt-list" onclick="libSetView('list')" title="List">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 3.5h8M4 7h8M4 10.5h8M1.5 3.5h.5M1.5 7h.5M1.5 10.5h.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="lib-sort-group">
+          <select class="lib-select" id="lib-sort-select" onchange="libRender()">
+            <option value="modified">Last modified</option>
+            <option value="created">Created</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bulk action bar -->
+    <div class="lib-bulk-bar" id="lib-bulk-bar" style="display:none">
+      <span id="lib-sel-count">0 selected</span>
+      <button class="lib-bulk-btn" onclick="bulkMoveImages()">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 3h3.5l1.5 1.5H10a1 1 0 0 1 1 1V9a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.2"/></svg>
+        Move to Folder
+      </button>
+      <button class="lib-bulk-btn lib-bulk-danger" onclick="bulkDeleteImages()">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 3h8M5 3V2h2v1M4 3v7h4V3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Delete
+      </button>
+      <button class="lib-bulk-cancel" onclick="libClearSelection()">✕ Cancel</button>
+    </div>
+
+    <!-- Content area -->
+    <div class="lib-content" id="lib-content"><!-- injected --></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FOLDER DETAIL VIEW (fullscreen overlay)
+════════════════════════════════════════════ -->
+<div id="folder-detail-view" class="lib-view" style="display:none">
+  <aside class="lib-sidebar">
+    <div class="lib-sidebar-header">
+      <button class="lib-back-btn" onclick="closeFolderDetail()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Library
+      </button>
+    </div>
+    <div class="lib-sidebar-section">
+      <div class="lib-sb-item" onclick="libSetSection('all');closeFolderDetail()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="1.5" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1.5" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1.5" y="8" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="4.5" height="4.5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
+        All Folders
+      </div>
+      <div class="lib-sb-item" onclick="libSetSection('unsorted');closeFolderDetail()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4h10M4 7h6M6 10h2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Unsorted
+      </div>
+    </div>
+    <div class="lib-sidebar-label">Folders</div>
+    <div class="lib-sidebar-section" id="fd-sb-folders"><!-- injected --></div>
+    <button class="lib-new-folder-inline" onclick="openCreateFolder()">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      New Folder
+    </button>
+  </aside>
+
+  <div class="lib-main">
+    <div class="lib-topbar">
+      <div class="lib-topbar-left">
+        <div class="fd-folder-icon" id="fd-folder-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h4.5l1.5 2H14a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" fill="currentColor" opacity=".15" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <div>
+          <div class="fd-folder-name" id="fd-folder-name">Folder</div>
+          <div class="fd-meta" id="fd-meta">0 images</div>
+        </div>
+      </div>
+      <div class="lib-topbar-right">
+        <button class="lib-folder-create-btn" onclick="createChildFolder()" title="Create folder">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4h4l1.5 2H12a1 1 0 0 1 1 1v4.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M7 7.5v3M5.5 9h3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </button>
+        <div class="lib-upload-wrap">
+          <button class="lib-create-split-btn" onclick="toggleFdUploadMenu()">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1.5v5.5M2.5 4l3-3 3 3M1.5 9.5h8" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Upload
+          </button>
+          <div class="lib-upload-menu" id="fd-upload-menu" style="display:none">
+            <div class="lib-upload-item" onclick="triggerFdFileUpload()">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5v7M3.5 4.5l3-3 3 3M1.5 10.5h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Upload from device
+            </div>
+            <div class="lib-upload-item" onclick="chooseFromLibrary()">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="1.5" width="4" height="4" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="7.5" y="1.5" width="4" height="4" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1.5" y="7.5" width="4" height="4" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="7.5" y="7.5" width="4" height="4" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
+              Choose from library
+            </div>
+          </div>
+          <input type="file" id="fd-file-input" accept="image/*" multiple style="display:none" onchange="handleFileUpload(this)"/>
+        </div>
+        <button class="lib-btn-primary" id="fd-share-btn" onclick="openShareModal()">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="9" cy="2.5" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="2.5" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="9" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4 6.7l3.5 2M7.5 3.3L4 5" stroke="currentColor" stroke-width="1.2"/></svg>
+          Share
+        </button>
+        <div class="lib-sort-group">
+          <select class="lib-select" id="fd-sort-select" onchange="renderFolderDetail()">
+            <option value="modified">Last modified</option>
+            <option value="created">Created</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+        <div class="lib-view-toggle">
+          <button class="lib-vt-btn lib-vt-active" id="fd-vt-grid" onclick="fdSetView('grid')">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+          <button class="lib-vt-btn" id="fd-vt-list" onclick="fdSetView('list')">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 3.5h8M4 7h8M4 10.5h8M1.5 3.5h.5M1.5 7h.5M1.5 10.5h.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="lib-bulk-bar" id="fd-bulk-bar" style="display:none">
+      <span id="fd-sel-count">0 selected</span>
+      <button class="lib-bulk-btn" onclick="bulkMoveImages(true)">Move to Folder</button>
+      <button class="lib-bulk-btn lib-bulk-danger" onclick="bulkDeleteImages(true)">Delete</button>
+      <button class="lib-bulk-cancel" onclick="fdClearSelection()">✕ Cancel</button>
+    </div>
+    <div class="lib-content" id="fd-content"><!-- injected --></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CONTEXT MENU
+════════════════════════════════════════════ -->
+<div id="lib-ctx-menu" class="lib-ctx-menu" style="display:none">
+  <div class="lib-ctx-item" onclick="ctxMoveToFolder()">
+    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 3h3.5l1.5 1.5H11a1 1 0 0 1 1 1V10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.2"/></svg>
+    Move to Folder
+  </div>
+  <div class="lib-ctx-item lib-ctx-danger" onclick="ctxDeleteImage()">
+    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 3h9M5 3V2h3v1M4 3v8h5V3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Delete
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FOLDER PICKER MODAL
+════════════════════════════════════════════ -->
+<div id="fp-overlay" class="modal-overlay" onclick="closeFolderPicker()" style="display:none"></div>
+<div id="fp-modal" class="fp-modal" style="display:none">
+  <div class="fp-header">
+    <span class="fp-title">Move to Folder</span>
+    <button class="modal-close" onclick="closeFolderPicker()">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="fp-list" id="fp-list"><!-- injected --></div>
+  <div class="fp-footer">
+    <button class="fp-create-btn" onclick="openCreateFolderFromPicker()">
+      <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1v9M1 5.5h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Create New Folder
+    </button>
+    <div style="display:flex;gap:8px">
+      <button class="lib-btn-outline" onclick="closeFolderPicker()">Cancel</button>
+      <button class="lib-btn-primary" id="fp-move-btn" onclick="confirmMove()">Move</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CREATE FOLDER MODAL
+════════════════════════════════════════════ -->
+<div id="cf-overlay" class="modal-overlay" onclick="closeCreateFolder()" style="display:none"></div>
+<div id="cf-modal" class="cf-modal" style="display:none">
+  <div class="fp-header">
+    <span class="fp-title">New Folder</span>
+    <button class="modal-close" onclick="closeCreateFolder()">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="cf-body">
+    <div class="cf-colors">
+      <div class="cf-color cf-c-active" data-color="#2563EB" style="background:#2563EB" onclick="pickFolderColor(this)"></div>
+      <div class="cf-color" data-color="#16a34a" style="background:#16a34a" onclick="pickFolderColor(this)"></div>
+      <div class="cf-color" data-color="#dc2626" style="background:#dc2626" onclick="pickFolderColor(this)"></div>
+      <div class="cf-color" data-color="#d97706" style="background:#d97706" onclick="pickFolderColor(this)"></div>
+      <div class="cf-color" data-color="#7c3aed" style="background:#7c3aed" onclick="pickFolderColor(this)"></div>
+      <div class="cf-color" data-color="#0891b2" style="background:#0891b2" onclick="pickFolderColor(this)"></div>
+      <div class="cf-color" data-color="#374151" style="background:#374151" onclick="pickFolderColor(this)"></div>
+    </div>
+    <input class="cf-input" id="cf-name-input" type="text" placeholder="Folder name" maxlength="50"
+      oninput="cfValidate()" onkeydown="if(event.key==='Enter')cfSubmit()"/>
+    <div class="cf-error" id="cf-error" style="display:none">A folder with this name already exists</div>
+  </div>
+  <div class="cf-footer">
+    <button class="lib-btn-outline" onclick="closeCreateFolder()">Cancel</button>
+    <button class="lib-btn-primary" id="cf-submit-btn" onclick="cfSubmit()">Create Folder</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SHARE MODAL
+════════════════════════════════════════════ -->
+<div id="sm-overlay" class="modal-overlay" onclick="closeShareModal()" style="display:none"></div>
+<div id="sm-modal" class="sm-modal" style="display:none">
+  <div class="sm-header">
+    <span class="sm-title" id="sm-title">Share this project</span>
+    <div class="sm-header-actions">
+      <button class="sm-copy-link-btn" onclick="smCopyLink()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 8.5a3 3 0 0 0 4.24 0l1.5-1.5a3 3 0 0 0-4.24-4.24l-.84.83" stroke="#4e9eff" stroke-width="1.3" stroke-linecap="round"/><path d="M8.5 5.5a3 3 0 0 0-4.24 0L2.76 7a3 3 0 0 0 4.24 4.24l.83-.84" stroke="#4e9eff" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Copy link
+      </button>
+      <button class="sm-close-btn" onclick="closeShareModal()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="sm-invite-row">
+    <input class="sm-invite-input" id="sm-invite-input" type="email" placeholder="Add emails, names, or user groups"/>
+    <button class="sm-invite-btn" onclick="smInvite()">Invite</button>
+  </div>
+  <div class="sm-section-label">Who has access</div>
+  <div class="sm-access-row" onclick="smToggleAccess()">
+    <div class="sm-access-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 17c0-3.31 3.58-6 8-6s8 2.69 8 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="10" cy="7" r="3.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 15c0-2 2.09-3.5 4.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><circle cx="5.5" cy="6.5" r="2.3" stroke="currentColor" stroke-width="1.1"/></svg>
+    </div>
+    <div class="sm-access-who" id="sm-workspace-label">Anyone in Gayathri V's team</div>
+    <div class="sm-access-role-btn" id="sm-access-toggle">
+      can access <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2.5 3.5l2.5 2.5 2.5-2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+  <div class="sm-access-dropdown" id="sm-access-dropdown" style="display:none">
+    <div class="sm-access-opt sm-access-selected" data-level="restricted" onclick="smSetAccess('restricted',this)">
+      <div><div class="sm-opt-label">Restricted</div><div class="sm-opt-desc">Only people you add</div></div>
+      <svg class="sm-opt-check" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#4e9eff" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </div>
+    <div class="sm-access-opt" data-level="workspace" onclick="smSetAccess('workspace',this)">
+      <div><div class="sm-opt-label">Within Workspace</div><div class="sm-opt-desc">Anyone in this workspace</div></div>
+    </div>
+    <div class="sm-access-opt" data-level="public" onclick="smSetAccess('public',this)">
+      <div><div class="sm-opt-label">Public Link</div><div class="sm-opt-desc">Anyone with the link</div></div>
+    </div>
+  </div>
+  <div class="sm-members" id="sm-members"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     LIBRARY OPERATION TOAST
+════════════════════════════════════════════ -->
+<div id="lib-toast" class="lib-toast">
+  <span id="lib-toast-msg"></span>
+  <button id="lib-toast-undo" class="lib-toast-undo" style="display:none" onclick="libUndo()">Undo</button>
 </div>
 
 <script src="script.js"></script>
